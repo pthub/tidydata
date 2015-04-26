@@ -1,6 +1,6 @@
 #CodeBook
 
-This document describes the datasource, the various files in the dataset, the script used for the transformation, the steps involved and the output of the script.
+This document describes the datasource, the various files in the dataset, the variables, the script used for the transformation, the steps involved and the output of the script.
 
 ##Dataset Overview
 
@@ -32,7 +32,7 @@ The files of importance are given below
 8. test/subject_test.txt, Each row is a subject
 9. train/subject_train.txt, Each row is a subject
 
-## Set ofVariables
+## Variables
 
 The list of features given below contain (but not limited to) information about 
 
