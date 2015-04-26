@@ -32,6 +32,30 @@ The files of importance are given below
 8. test/subject_test.txt, Each row is a subject
 9. train/subject_train.txt, Each row is a subject
 
+## Set ofVariables
+
+The list of features given below contain (but not limited to) information about 
+
+1. mean(): Mean value
+2. std(): Standard deviation
+3. mad(): Median absolute deviation 
+4. max(): Largest value in array
+5. min(): Smallest value in array
+6. sma(): Signal magnitude area
+7. energy(): Energy measure. Sum of the squares divided by the number of values. 
+8. iqr(): Interquartile range 
+9. entropy(): Signal entropy
+10. arCoeff(): Autorregresion coefficients with Burg order equal to 4
+11. correlation(): correlation coefficient between two signals
+12. maxInds(): index of the frequency component with largest magnitude
+13. meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+14. skewness(): skewness of the frequency domain signal 
+15. kurtosis(): kurtosis of the frequency domain signal 
+16. bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+17. angle(): Angle between to vectors.
+
+The mean and standard deviation columns are the ones of interest for the transformations.
+
 ##Transformation Script
 
 There is a "run_analysis.R" script in this directory that does the following.
@@ -47,10 +71,11 @@ There is a "run_analysis.R" script in this directory that does the following.
 1. Load all the files into data tables.
 2. Enrich the "activity" tables with the activity labels
 3. Label all the datatables 
-4. Merge all the tables by column and row into a tidy dataset containing subject, activity and a list of features.
-5. Melt the dataset by ids and measurement variables
-6. Create a second independent data table with the average of each variable by subject and activity.
-7. Write out the datatable to a file.  
+4. Extract the "mean" and "std" columns/features
+5. Merge all the tables by column and row into a tidy dataset containing subject, activity and a list of features.
+6. Melt the dataset by ids and measurement variables
+7. Create a second independent data table with the average of each variable by subject and activity.
+8. Write out the datatable to a file.  
 
 ##Script Output
 
